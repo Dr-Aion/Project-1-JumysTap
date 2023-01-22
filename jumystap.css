@@ -8,6 +8,8 @@ body {
 }
 input {
     border: none;
+    width: 170px;
+    height: 40px;
 }
 
 button {
@@ -18,10 +20,12 @@ button {
     color: white;
 }
 
-.section-welcome {
+/* .section-welcome {
     height: 100vh;
-}
-
+} */
+.section-welcome {
+    margin-bottom: 150px;
+} 
 .nav {
     display: flex;
     justify-content: space-between;
@@ -36,7 +40,6 @@ button {
     /* background-color: aquamarine; */
     justify-content: flex-start;
     align-items: center;
-    width: 10%;
 }
 
 .nav-logo img {
@@ -47,19 +50,18 @@ button {
 
 .nav-menu {
     display: flex;
-    /* background-color: beige; */
+    /* background-color: beige;  */
     justify-content: flex-end;
     align-items: center;
-    width: 80%
 }
 li {
     list-style-type: none;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .nav-menu p {
     margin: 20px;
-    background-color: white;
+    /* background-color: white; */
 }
 
 .nav-button {
@@ -67,48 +69,26 @@ li {
     /* background-color: bisque; */
     justify-content: flex-end;
     align-items: center;
-    width: 10%;
 }
 
 .nav-button-get-started {
     background-color: grey;
 }
+
 .content {
-    display: flex;
     width: 80%;
     margin: auto;
-    justify-content: space-evenly;
-    align-items: center;
-    /* background-color: azure; */
-    height: 90%;
+    padding-top: 100px;
 }
-.content-info {
-    /* background-color: aquamarine; */
-    display: flex;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-.content-texts  {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-.content-texts h1 {
-    font-size: 54px;
-    color: black;
-}
-.content-texts p {
-    font-size: 16px;
-    color: black;
-}
-.content-image {
-    display: flex;
-    justify-content: flex-end;
-    width: 50%;
 
+.content-texts h1 {
+    color: black;
 }
+
+.content-texts p {
+    color: black;
+}
+
 .content img {
     width: 619px;
     height: 420px;
@@ -116,10 +96,6 @@ li {
 
 .how-it-works {
     background-color:#E1DEE7;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
     border-radius: 32px;
 }
 .how-it-works-heading {
@@ -131,14 +107,11 @@ li {
     margin:auto;
 }
 .how-it-works-heading h1 {
-    font-size: 54px;
     margin-top: 5px;
     /* background-color: #712FFF; */
 }
 
 .how-it-works-steps {
-    display: flex;
-    justify-content: space-between;
     width: 80%;
     margin:auto;
     margin-bottom: 50px;
@@ -149,10 +122,12 @@ li {
     margin-bottom: 20px;
 }
 .how-it-works-step{
+    /* background-color: pink; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     margin-block: 20px;
+    padding-right: 30px;
 }
 
 .get-started {
@@ -167,67 +142,44 @@ li {
 }
 .get-started-search {
     display: flex;
-    /* background-color: bisque; */
+    /* background-color: bisque;  */
+    height: 60px;
     margin-bottom: 100px;
 }
 .get-started-search-input {
     display: flex;
     align-items: center;
     background-color: white;
-    width: 619px;
+    width: 100%; 
     height: 50px;
     border-radius: 12px;
-    margin-right: 32px;
+    margin-bottom: 32px;
+
 }
 .get-started-search-input img {
     width: 24px;
     height: 24px;
     padding-left: 5px;
 }
+
+.get-started-button {
+    width: 100px;
+}
 .upload-cv-block {
     width: 80%;
     margin: auto;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     /* background-color: azure; */
     margin-bottom: 50px;
 }
-.upload-cv-info {
-    /* background-color: aquamarine; */
-    display: flex;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-.upload-cv-texts  {
-    /* background-color: #E1DEE7; */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    margin-block: 32px;
-}
-.upload-cv-texts h1 {
-    font-size: 54px;
-    color: black;
-}
-.upload-cv-texts p {
-    font-size: 16px;
-    color: black;
-}
-.upload-cv-image {
-    /* background-color: yellow; */
-    display: flex;
-    justify-content: flex-start;
-    width: 50%;
-    margin-right: 20px;
 
+.upload-cv-texts h1 {
+    color: black;
 }
-.upload-cv-image img {
-    width: 619px;
-    height: 420px;
+
+.upload-cv-texts p {
+    color: black;
 }
+
 .upload-cv-button {
     display: flex;
     justify-content: center;
@@ -237,9 +189,6 @@ li {
     margin-right: 5px;
 }
 .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     background-color: #FFFFFF;
     height: 10%;
     border-radius: 32px;
@@ -247,16 +196,7 @@ li {
 .footer-nav {
     width: 80%; 
     margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;    
-    /* background-color: beige; */
-}
-.footer-nav-menu {
-    display: flex;
-    justify-content: flex-start;
-    width: 40%;
-    /* background-color: #712FFF; */
+    /* background-color: beige;  */
 }
 li {
     margin-right: 40px;
@@ -270,8 +210,6 @@ li {
 .footer-made-by {
     width: 80%; 
     margin: auto;
-    display: flex;
-    justify-content: flex-end;
     font-size: 14px;
 }
 
@@ -281,30 +219,207 @@ li {
     height: auto !important;
 }
 
-@media (max-width:767px) {
-    .upload-cv-image img, .content-image img {
-        max-width: 100%;
-        max-height: 100%;
+@media (max-width:766px) {
+    .nav-menu {
+        display: none;
+    }
+    .numbers {
+        max-width: 24px;
+        max-height: 42px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    .content-texts p {
+        font-size: 12px;
+    }
+    .upload-cv-texts p {
+        font-size: 12px;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .content-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content-texts  {
+        text-align: center;
+    }
+    .content-image {
+        order: -1;
+    }
+    .how-it-works {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .how-it-works-steps {
+        display: flex;
+        flex-direction: column;
+    }
+    .get-started-texts {
+        text-align: center;
+    }
+    .get-started-search {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* background-color: bisque; */
+    }
+    .upload-cv-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
-@media (min-width:768px) {
+@media (min-width:767px) {
     .upload-cv-image img, .content-image img {
-        max-width: 240px;
-        max-height: 240px;
+        max-width: 600px;
+        max-height: 400px;
+    }
+    .content-texts p {
+        font-size: 13px;
+    }
+    .upload-cv-texts p {
+        font-size: 13px;
+    }
+    .nav-menu {
+        width: 65%;
+    }
+    .nav-button {
+        width: 18%;
+    }
+    .content {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        /* background-color: azure; */
+        /* height: 90%; */
+    }
+    .content-info {
+        /* background-color: aquamarine; */
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-right: 10px;
+    }
+    .content-texts  {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .content-image {
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
+    }
+    .how-it-works {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }
+    .how-it-works-steps {
+        display: flex;
+        justify-content: space-between;
+    }
+    .get-started-search-input {
+        width: 550px; 
+        margin-right: 32px;
+    }
+    .upload-cv-block {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .upload-cv-image {
+        /* background-color: yellow; */
+        display: flex;
+        justify-content: flex-start;
+        width: 50%;
+        margin-right: 20px;
+    }
+    .upload-cv-info {
+        /* background-color: aquamarine; */
+        display: flex;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .upload-cv-texts  {
+        /* background-color: #E1DEE7; */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-block: 32px;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
 
 @media (min-width:992px) {
     .upload-cv-image img, .content-image img {
-        max-width: 314px;
-        max-height: 314px;
+        max-width: 600px;
+        max-height: 400px;
+    }
+    .nav-menu {
+        width: 75%;
+    }
+    .nav-button {
+        width: 15%;
+    }
+    .get-started-search-input {
+        width: 619px; 
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .footer-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;  
+    }
+    .footer-nav-menu {
+        display: flex;
+        justify-content: flex-start;
+        width: 42%; 
+    }
+    .footer-made-by {
+        display: flex;
+        justify-content: flex-end;
     }
 }
 
 @media (min-width:1200px) {
     .upload-cv-image img, .content-image img {
-        max-width: 619px;
-        max-height: 420px;
+        max-width: 700px;
+        max-height: 467px;
+    }
+    h1 {
+        font-size: 54px;
+    }
+    .content-texts p {
+        font-size: 16px;
+    }
+    .upload-cv-texts p {
+        font-size: 16px;
     }
 }
